@@ -34,6 +34,7 @@
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>

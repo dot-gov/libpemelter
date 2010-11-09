@@ -21,3 +21,19 @@ PEMelter::~PEMelter() {
     delete mangler_;
     delete parser_;
 }
+
+std::size_t PEMelter::write(const char* data, std::size_t size)
+{
+    return melter_->write(data, size);
+}
+
+const char* PEMelter::get_data(std::size_t* size)
+{
+    *size = 0;
+    return "";
+}
+
+void clear()
+{
+    return;
+}

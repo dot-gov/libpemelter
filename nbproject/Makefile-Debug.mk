@@ -70,10 +70,10 @@ ${OBJECTDIR}/PEMangler.o: PEMangler.cc
 	${RM} $@.d
 	$(COMPILE.cc) -g -I../libmelter -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/PEMangler.o PEMangler.cc
 
-${OBJECTDIR}/PEParser.o: PEParser.cpp 
+${OBJECTDIR}/PEParser.o: PEParser.cc 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -I../libmelter -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/PEParser.o PEParser.cpp
+	$(COMPILE.cc) -g -I../libmelter -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/PEParser.o PEParser.cc
 
 ${OBJECTDIR}/bio_melt.o: bio_melt.cc 
 	${MKDIR} -p ${OBJECTDIR}

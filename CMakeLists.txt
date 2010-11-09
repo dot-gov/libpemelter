@@ -18,7 +18,7 @@ endif()
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O2 -Wall")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
-set(pemelter_SOURCES PEMangler.cc PEParser.cc PEMelter.cc)
+set(pemelter_SOURCES PEMangler.cc PEParser.cc PEMelter.cc bio_melt.cc)
 
 include_directories("../libmelter")
 link_directories("../libmelter")
