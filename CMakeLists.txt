@@ -8,6 +8,8 @@ endif()
 
 project(libpemelter CXX)
 
+message("-- Building libpemelter (${CMAKE_BUILD_TYPE}), version ${melter_VERSION_MAJOR}.${melter_VERSION_MINOR}")
+
 cmake_policy(SET CMP0015 NEW)
 
 option(WITH_TESTS "Build unit tests" ON)
@@ -22,8 +24,6 @@ set(pemelter_SOURCES PEMangler.cc PEParser.cc PEMelter.cc bio_melt.cc)
 
 include_directories("../libmelter")
 link_directories("../libmelter")
-
-message("-- Building ${CMAKE_BUILD_TYPE} version.")
 
 add_library(pemelter SHARED ${pemelter_SOURCES})
 target_link_libraries(pemelter melter)
