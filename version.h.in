@@ -1,0 +1,15 @@
+/* 
+ * File:   version.h.in
+ * Author: daniele
+ *
+ * Created on November 8, 2010, 3:02 PM
+ */
+
+#ifndef VERSION_H
+#define	VERSION_H
+
+#define libpemelter_VERSION_MAJOR @libpemelter_VERSION_MAJOR@
+#define libpemelter_VERSION_MINOR @libpemelter_VERSION_MINOR@
+
+#endif	/* VERSION_H */
+
