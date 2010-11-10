@@ -11,6 +11,10 @@
 #include <wchar.h>
 #include <stdint.h>
 
+#ifdef WIN32
+#include <Windows.h>
+#else
+
 #define CONST               const
 
 // Basic types
@@ -808,5 +812,7 @@ typedef struct _IMAGE_RESOURCE_DATA_ENTRY {
 
 #define CP_UTF7                   65000       // UTF-7 translation
 #define CP_UTF8                   65001       // UTF-8 translation
+
+#endif /* not defined WIN32 */
 
 #endif /* WIN32TYPES_H_ */
